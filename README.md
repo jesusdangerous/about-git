@@ -19,3 +19,13 @@ $ git add - добавить файлы в репозиторий.<br />
 $ git commit - создать коммит.<br />
 $ git log - посмотреть историю коммитов.<br />
 $ git remote add - привязать удаленный репозиторий к локальному.<br />
+
+
+```mermaid
+graph LR;
+  untracked -- "git add" --> staged;
+  staged    -- "???"     --> tracked/comitted;
+
+%% стрелка без текста для примера: 
+  A --> B;
+``` 
